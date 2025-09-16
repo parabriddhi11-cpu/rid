@@ -1,10 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddhi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello, I'm Riddhi</h1>
-    <p>Welcome to my personal website!</p>
-    <p>I am passionate about baking.</p>
+    <header>
+        <h1>Riddhi's Portfolio</h1>
+        <nav>
+            <button onclick="showTab('home')">Home</button>
+            <button onclick="showTab('about')">About Me</button>
+            <button onclick="showTab('resume')">Resume</button>
+            <button onclick="showTab('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <h2>Welcome to my personal website!</h2>
+            <p>This is a modern, chic personal portfolio.</p>
+        </section>
+
+        <section id="about" class="tab-content">
+            <h2>About Me</h2>
+            <p>I am a passionate individual focused on personal growth, learning, and building amazing things.</p>
+        </section>
+
+        <section id="resume" class="tab-content">
+            <h2>My Resume</h2>
+            <a href="resume.pdf" target="_blank">📄 View/Download My Resume</a>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <p>Email: riddhi@example.com</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
+
